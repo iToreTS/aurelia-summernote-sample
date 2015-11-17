@@ -23,13 +23,27 @@
         "aurelia/templating-router",
         "aurelia/loader-default",
         "aurelia/history-browser",
-        "aurelia/logging-console",
-        "bootstrap",
-        "bootstrap/css/bootstrap.css!text"
+        "aurelia/logging-console"
       ],
       "options": {
         "inject": true,
         "minify": true
+      }
+    },
+    "dist/libs": {
+      "includes": [
+        "jquery",
+        "bootstrap/css/bootstrap.css!text",
+        "core-js",
+        "aurelia-bs-modal",
+        "summernote/summernote",
+        "superagent",
+        "text",
+        "uuid"
+      ],
+      "options": {
+        "inject": true,
+        "minify": false
       }
     }
   }

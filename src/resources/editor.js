@@ -2,6 +2,7 @@ import {inject, bindable} from "aurelia-framework"
 import {ObserverLocator} from "aurelia-binding"
 import uuid from "uuid"
 import $ from 'jquery'
+import 'bootstrap'
 import 'summernote/summernote'
 import superagent from 'superagent'
 
