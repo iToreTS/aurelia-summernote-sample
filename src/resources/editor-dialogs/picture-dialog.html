@@ -1,0 +1,12 @@
+<template>
+	<modal showing.bind="shown">
+		<modal-header title="画像を挿入" close.call="close()"></modal-header>
+		<modal-body content-view.bind="dialogContent"></modal-body>
+		<modal-footer>
+			<button class="btn btn-default" click.delegate="submit()" disabled.bind="uploading">
+				<i class="fa fa-spin fa-spinner" show.bind="uploading"></i> 挿入
+			</button>
+			<button class="btn btn-default" click.delegate="close()">キャンセル</button>
+		</modal-footer>
+	</modal>
+</template>

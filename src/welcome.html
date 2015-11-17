@@ -1,27 +1,31 @@
 <template>
 	<section class="au-animate">
-		<h2>${heading}</h2>
 
-		<form role="form" submit.delegate="submit()">
-			<div class="form-group">
-				<label for="fn">First Name</label>
-				<input type="text" value.bind="firstName" class="form-control" id="fn" placeholder="first name">
+		<h2><a href="https://github.com/sukobuto/aurelia-summernote-sample"><i class="fa fa-github"></i> Aurelia sample application with Summernote</a></h2>
+		<p>
+			<a href="http://summernote.org/">Summernote</a> is the simple WYSIWYG editor on Bootstrap
+		</p>
+
+		<div class="row">
+
+			<div class="col-md-6">
+
+				<h3>Summernote editor</h3>
+				<editor value.two-way="body" height="450"></editor>
+
 			</div>
-			<div class="form-group">
-				<label for="ln">Last Name</label>
-				<input type="text" value.bind="lastName" class="form-control" id="ln" placeholder="last name">
+
+			<div class="col-md-6">
+
+				<h3>textarea</h3>
+				<textarea cols="70" rows="10" value.two-way="body" style="width: 100%;"></textarea>
+
+				<h3>Preview</h3>
+				<div innerhtml.bind="body"></div>
+
 			</div>
-			<div class="form-group">
-				<label>Full Name</label>
 
-				<p class="help-block">${fullName | upper}</p>
-			</div>
-			<button type="submit" class="btn btn-default">Submit</button>
-		</form>
-
-		<editor value.two-way="body"></editor>
-
-		<textarea value.two-way="body" cols="30" rows="10"></textarea>
+		</div>
 
 	</section>
 </template>

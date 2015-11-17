@@ -1,3 +1,7 @@
 <template>
-	<div class="summernote-host" id.bind="editor_id"></div>
+	<require from="resources/editor-dialogs/picture-dialog"></require>
+	<div class="summernote-host" id.bind="editorId"></div>
+	<picture-dialog shown.two-way="pictureDialogShown"
+	                uploading.bind="pictureUploading"
+	                submit.trigger="pictureSubmit($event)"></picture-dialog>
 </template>
