@@ -41,4 +41,4 @@ To run the app, follow these steps.
   gulp watch
   ```
 
-7. Browse to [http://localhost:3000](http://localhost:3000) to see the app.
+7. Browse to [http://localhost:9000](http://localhost:9000) to see the app.
