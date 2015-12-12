@@ -23,7 +23,7 @@ app.use(function (req, res, next) {
 	res.setHeader('Access-Control-Allow-Origin', '*');
 	next();
 });
-app.use(serveStatic('.'));
+app.use(serveStatic(__dirname));
 
 let onUpload = async function(req, res) {
 	let file = req.file;

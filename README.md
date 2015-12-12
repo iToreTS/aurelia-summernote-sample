@@ -35,22 +35,10 @@ To run the app, follow these steps.
   ```
   >**Note:** Windows users, if you experience an error of "unknown command unzip" you can solve this problem by doing `npm install -g unzip` and then re-running `jspm install`.
 
-6. To build the app, execute the following command:
+6. To build and run the app, execute the following command:
 
   ```shell
-  gulp build
+  gulp watch
   ```
 
-7. To run the app, execute the following command:
-
-  ```shell
-  npm start
-  ```
-  
-  or... you can change the port number.
-  
-  ```shell
-  node server.babel -p 3001
-  ```
-
-8. Browse to [http://localhost:3000](http://localhost:3000) to see the app.
+7. Browse to [http://localhost:3000](http://localhost:3000) to see the app.
